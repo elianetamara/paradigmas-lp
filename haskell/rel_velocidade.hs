@@ -18,5 +18,5 @@ relVelocidade velocidades =
 
 main :: IO ()
 main = do
-  putStrLn (relVelocidade [55, 60, 80, 81, 88, 90])
-  -- ajustar entrada
+  a <- readLn:: IO [Int]
+  putStrLn (relVelocidade a)
