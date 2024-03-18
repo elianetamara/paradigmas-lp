@@ -16,5 +16,6 @@ contaSubs sublists = length (listaSubs sublists)
 
 main :: IO ()
 main = do
-  a <- readLn:: IO [Int]
-  print (contaSubs a)
+  entrada <- getLine
+  let listaNums = map read (words entrada)
+  print (contaSubs listaNums)
